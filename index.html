@@ -53,7 +53,7 @@
       text-align: center;
       color: #333;
       position: relative;
-      overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+      overflow-y: auto;
     }
 
     .carte-content {
@@ -136,6 +136,12 @@
       color: #4e342e;
     }
 
+    .contact-label {
+      font-weight: 600;
+      min-width: 40px;
+      text-align: right;
+    }
+
     .contact-icons {
       display: flex;
       justify-content: center;
@@ -154,7 +160,6 @@
       transform: scale(1.2);
     }
 
-    /* Pour les très petits écrans */
     @media (max-width: 400px) {
       .carte {
         padding: 20px 15px;
@@ -178,12 +183,15 @@
         font-size: 0.8rem;
       }
       
+      .contact-label {
+        min-width: 35px;
+      }
+      
       .contact-icons a {
         font-size: 25px;
       }
     }
 
-    /* Pour les écrans en mode paysage */
     @media (max-height: 500px) {
       .carte {
         max-height: 95vh;
@@ -227,12 +235,12 @@
         <p><a href="https://www.rmaassurance.com" target="_blank"><i class="fas fa-globe"></i> www.rmaassurance.com</a></p>
 
         <div class="contact-lines">
-          <div><i class="fas fa-phone"></i> (212) 524 44 85 92</div>
-          <div><i class="fas fa-fax"></i> (212) 524 43 16 07</div>
-          <div><i class="fas fa-mobile-alt"></i> (212) 630 08 60 02</div>
+          <div><span class="contact-label">Tél:</span> <i class="fas fa-phone"></i> (212) 524 44 85 92</div>
+          <div><span class="contact-label">Fax:</span> <i class="fas fa-fax"></i> (212) 524 43 16 07</div>
+          <div><span class="contact-label">GSM:</span> <i class="fas fa-mobile-alt"></i> (212) 630 08 60 02</div>
         </div>
 
-        <p><a href="mailto:akjoujhajar@gmail.com"><i class="fas fa-envelope"></i> akjoujhajar@gmail.com</a></p>
+        <p><a href="mailto:hajar.akjouj@email.com"><i class="fas fa-envelope"></i> hajar.akjouj@email.com</a></p>
 
         <div class="contact-icons">
           <a href="tel:+212630086002"><i class="fas fa-phone"></i></a>
